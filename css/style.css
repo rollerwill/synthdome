@@ -1,0 +1,208 @@
+
+
+
+/* Paleta de Colores
+
+MORADO         #711c91	(113,28,145)
+ROSA           #EA00d9	(234,0,217)
+CELESTE        #0abdc6	(10,189,198)
+AZUL           #133e7c	(19,62,124)
+AZUL MARINO    #091833	(9,24,51)
+NEGRO          #000000  (0,0,0)
+AMARILLO       (251,255,0) */
+
+/* Tipografia: Montserrat */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+/****** Header *******/
+
+.logo_nombre{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1.20rem;
+    margin: 0;
+    padding: 20px;
+}
+
+.logoVR{
+    width: 70px;
+}
+
+nav ul{
+    background-color: rgb(113, 28, 145);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    font-size: 1.35rem;
+    font-weight: 700;
+    position: sticky;
+    top: 0
+    ;
+}
+
+/* Hipervinculos del nav */
+
+.a{
+    color: white;
+    text-decoration: none;
+
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(251, 255, 0);
+    text-decoration: none;
+}
+
+a:active{
+    color: rgb(10, 189, 198);
+    text-decoration: none;
+}
+
+/* Cuerpo Principal */
+
+main{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Footer */
+footer{
+    background-image: url(../elementos/cyberpunk.jpg);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    height: 100px;
+}
+
+.pfooter{
+    font-size: 0.8rem;
+    color: white;
+}
+
+.logo_instagram{
+    width: 40px;
+}
+
+.logo_facebook{
+    height: 40px;
+}
+
+.logo_youtube{
+    width: 40px;
+}
+
+
+/* ------------------- INDEX ---------------------- */
+
+.foto_convencion{
+    width: 1850px;
+}
+
+.introduccion{
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+
+
+/* ------------------- EVENTO ---------------------- */
+
+.logo_vitality{
+    width: 200px;
+}
+
+.logo_falcons{
+    width: 200px;
+}
+
+.logo_g2{
+    width: 200px;
+}
+
+.logo_furia{
+    width: 200px;
+}
+
+
+/* ------------------- E-SPORTS ---------------------- */
+
+.E-sports_titulo{
+    font-size: 1.80rem;
+}
+
+.vitality_cs2{
+    height: 315px;
+}
+
+.falcons_cs2{
+    height: 315px;
+}
+
+.g2_cs2{
+    height: 315px;
+}
+
+.furia_cs2{
+    height: 315px;
+}
+
+.vitality_RL{
+    height: 315px;
+}
+
+.falcons_RL{
+    height: 315px;
+}
+
+.g2_RL{
+    height: 315px;
+}
+
+.furia_RL{
+    height: 315px;
+}
+
+/* ------------------- ARTISTAS ---------------------- */
+
+.parlantes{
+    width: 1020px;
+}
+
+.futurecop{
+    height: 460px;
+}
+
+.the_midnight{
+    height: 460px;
+}
+
+.mcrocklin_and_hutch{
+    height: 460px;
+}
+
+/* ------------------- REGISTRO ---------------------- */
+
+.imagen_perfil{
+    width: 350px;
+}
