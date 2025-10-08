@@ -20,6 +20,7 @@ body{
     margin: 0;
     padding: 0px;
     position: relative;
+    min-height: 100vh;
 }
 
 /****** Header *******/
@@ -28,9 +29,9 @@ body{
     width: 100%;
     background-color: #0abdc6;
     font-size: 1.2rem;
-    position: sticky;
-    top: 0;
 }
+
+
 
 .navbar .navbar-brand{
     font-size: 1.8rem;
@@ -290,6 +291,7 @@ footer section div{
     font-size: 4rem;
 
 }
+
 h2.titulo_evento2{
     width: 25%;
     color: white;
@@ -688,33 +690,225 @@ h2.esports_titulo2{
 
 /* ------------------- ARTISTAS ---------------------- */
 
-.parlantes{
-    width: 1020px;
+
+/* ------------------- BANNER ---------------------- */
+
+
+.banner_artistas{
+    background-image: url(../elementos/artistas_banner.png);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fbff00;
+    height: 537px;
+    justify-content: center;
+    padding-left: 5%;
+    background-size: cover;
 }
 
-.futurecop{
-    height: 460px;
+.banner_artistas h2{
+    font-size: 4rem;
+
+}
+
+h2.titulo_artista2{
+    width: 25%;
+    color: white;
+    font-size: 3rem;
+}
+
+/*********** <!-- PARTE 1 --> ***********/
+
+.artistas_introduccion{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+
+.parrafo_artistas{
+    font-size: 1.5rem;
+}
+
+.artistas_introduccion h2{
+    font-size: 2.3rem;
+    padding-top: 2%;
+}
+
+/************** PARTE 2  / CAJAS ARTISTAS *****************/
+
+
+.caja_papa_artistas{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3%;
+    margin: 1% 5% 5% 5%;
+    text-align: center;
+}
+
+/************** THE MIDNIGHT *****************/
+
+.caja_themidnght{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
 }
 
 .the_midnight{
-    height: 460px;
+    width: 100%;
+}
+
+.the_midnight_spotify{
+    height: 500px;
+}
+
+/************** McRocklin and Hutch *****************/
+
+.caja_mcrocklin_and_hutch{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
 }
 
 .mcrocklin_and_hutch{
-    height: 460px;
+    width: 100%;
+}
+
+.mcrocklin_and_hutch_spotify{
+    height: 500px;
+}
+
+/************** Tonebox *****************/
+
+.caja_tonebox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.tonebox{
+    width: 100%;
+}
+
+.tonebox_spotify{
+    height: 500px;
+
 }
 
 /* ------------------- REGISTRO ---------------------- */
 
-.imagen_perfil{
-    width: 350px;
+.banner_registro{
+    background-image: url(../elementos/registro_banner.png);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #0abdc6;
+    height: 537px;
+    justify-content: center;
+    padding-left: 5%;
+    background-size: cover;
+}
+
+.banner_registro h2{
+    font-size: 4rem;
+
+}
+
+.titulo_registro2{
+    width: 50%;
+    color: white;
 }
 
 
-/*********** MEDIA QUERYS **************/
+
+.papa_registro{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.hijo_registro1{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+
+
+.hijo_registro2{
+    flex: 0.3;
+}
+
+.hijo_registro2 img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    filter: drop-shadow(0px 5px 15px #133e7c);
+}
+
+/* ------------------- FORMULARIO ---------------------- */
+
+
+.hijo_registro1 form div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    font-size: 1.5rem;
+}
+
+.hijo_registro1 form div label{
+    width: 40%;
+}
+
+
+.registro_submit input{
+    background-color: #fbff00;
+    padding: 5px 40px;
+    color: #091833;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************** MEDIA QUERYS *************************************************/
 
 @media (max-width: 480px) {
  
+main{
+    min-height: 70vh;
+}
+
+
+/*********** FOOTER **************/
+
+footer section div{
+    width: 60%;
+}
+
+
 /*********** INDEX **************/
 
 .introduccion_papa{
@@ -756,7 +950,6 @@ h2.esports_titulo2{
     font-size: 4rem;
     margin-top: 20%;
 }
-
 
 
 /*********** EVENTO **************/
@@ -936,37 +1129,95 @@ h2.esports_titulo2{
 }
 
 
+/*********** ARTISTAS **************/
 
 
+/* ------------------- BANNER ---------------------- */
 
 
+.banner_artistas{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+}
+
+.banner_artistas h2{
+    font-size: 1rem;
+    width: 40%;
+}
+
+/* ------------------- PARTE 1 ---------------------- */
+
+.parrafo_artistas{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.artistas_introduccion h2{
+    font-size: 1.5rem;
+    padding-top: 2%;
+}
+
+/* ------------------- PARTE 2 / CAJAS ARTISTAS ---------------------- */
+
+.caja_papa_artistas{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+/* ------------------- REGISTRO---------------------- */
+
+.banner_registro{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+}
+
+.banner_registro h2{
+    font-size: 1rem;
+    width: 40%;
+}
+
+.hijo_registro1{
+    flex: 0.8;
+}
+
+.hijo_registro1 form div{
+    font-size: 0.8rem;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hijo_registro2{
+    display: none;
+}
 
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
