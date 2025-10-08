@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
     <!-- CSS -->
      <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -13,27 +16,47 @@
 
     <header>
 
-    <!-- Logo y Nombre -->
-     <section class="logo_nombre">
-        <a href="../index.html"><img class="logoVR" src="../elementos/vrLOGO.png" alt="logo"></a>
-        <h1>CyberClash 2025</h1>
-    </section>
+    <!-- BOOTSTRAP NAV -->
 
-    <!-- Menu de Navegacion -->
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./evento.html">Evento</a></li>
-                <li><a href="./expo.html">Expo</a></li>
-                <li><a href="#">E-Sports</a></li>
-                <li><a href="./artistas.html">Artistas</a></li>
-                <li><a href="./registro.html">Registro</a></li>
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Synthdome</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                    <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./evento.html">Evento</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./expo.html">Expo</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">E-Sports</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./artistas.html">Artistas</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active boton_registro" aria-current="page" href="./registro.html">Registro</a>
+                </li>
             </ul>
-
-
+            </div>
+        </div>
         </nav>
 
+       
+    <!-- END -->
+
+    <!-- BANNER E-SPORTS -->
+    <section class="banner_esports">
+    <h2>E-SPORTS</h2>
+    <h2 class="titulo_evento2">Arena Digital</h2>
+    </section>
 
 
     </header>
@@ -42,106 +65,81 @@
 
     <main>
 
-            <h2 class="E-sports_titulo">Torneo E-Sports</h2>
-            <p>Conoce a cada uno de los equipos participantes en las semifinales del CyberClash 2025</p>
+            <h2 class="esports_titulo">Equipos en Competencia:</h2>
 
-            <!-- Counter-Strike 2 --> 
-            <h2>Counter Strike 2</h2>
+            <p class="parrafo_esports">La intensidad táctica y la precisión se enfrentan en el torneo de Counter-Strike 2 
+            de SynthDome. Los mejores equipos compiten por la gloria en un escenario donde cada 
+            ronda define a los verdaderos maestros del juego.</p>
+
+            <h2 class="esports_titulo2">Counter Strike 2</h2>
 
             <!-- Team Vitality -->        
             
-            <section>
-
-                <h3>Team Vitality</h3>
-                <img class="vitality_cs2" src="../elementos/team_vitality_cs2.webp" alt="vitality_cs2">
-                <h4>¿Como llego Team Vitality a las semifinales?</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SkmPSdhClww?si=E0JMjvzW4GiIOApC" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+            <section class="vitality_papa">
+                <div class="vitality_hijo1">
+                    <h3>Team Vitality</h3>
+                    <p>Team Vitality es una organización francesa profesional de esports que 
+                    se incorporó a Counter-Strike: Global Offensive a principios de octubre
+                    de 2018. Se la considera una de las organizaciones más exitosas en la 
+                    historia de CS, con 21 trofeos de categoría S, incluyendo 2 Majors y un ESL Grand Slam.</p>
+                        <br>
+                    <p>Miembros: Apex, ZywOo, ropz, mezii y flameZ.</p>
+                </div>
+                <div class="vitality_hijo4">
+                    <img src="../elementos/Team_Vitality.png" alt="vitality_cs2">
+                </div>
             </section>
             
             <!-- Team Falcons -->  
             
-            <section>
-                 
-                <h3>Team Falcons</h3>
-                <img class="falcons_cs2" src="../elementos/team_falcons_cs2.png" alt="falcons_cs2">
-                <h4>¿Como llego Team Falcons a las semifinales?</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Srt4Jl3T-V8?si=0wO-zHmGG52lEWgb" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+            <section class="falcons_papa">
+                <div class="falcons_hijo1">
+                 <h3>Team Falcons</h3>
+                     <p>Originario de Arabia Saudita, Team Falcons se ha convertido en una de las organizaciones
+                     más prometedoras de Counter-Strike 2. Con un roster de figuras internacionales, el equipo 
+                     alcanzó la cima al conquistar el PGL Bucharest 2025 y la Esports World Cup 2024, consolidándose
+                     como un referente global en la escena competitiva.</p>
+                        <br>
+                     <p>Miembros: NiKo, TeSeS, m0NEsY, kyxsan y kyosuke.</p>
+                </div>
+                <div class="falcons_hijo4">
+                    <img src="../elementos/team_falcons.png" alt="team_falcons">
+                </div>
             </section>
 
             <!-- Team G2 -->  
              
-            <section>
-
-                <h3>Team G2</h3>
-                <img class="g2_cs2" src="../elementos/team_g2_cs2.jpeg" alt="g2_cs2">
-                <h4>¿Como llego Team G2 a las semifinales?</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nN-m4R8JDG4?si=wswahaZhddM1Y14p" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+            <section class="g2_papa">
+                <div class="g2_hijo1">
+                 <h3>Team G2 E-sports</h3>
+                    <p>Fundado en 2014 por Carlos “ocelote” Rodríguez, G2 Esports es uno de los equipos más emblemáticos
+                    de Counter-Strike. Con sede en Berlín, ha marcado la escena competitiva con títulos como el BLAST 
+                    Premier World Final 2022, el IEM Katowice 2023 y el IEM Cologne 2023, combinando talento europeo y
+                    un estilo de juego inconfundible.</p>
+                        <br>
+                    <p>Miembros: hunTer-, malbsMd, HeavyGod, SunPayus y matys.</p>
+                </div>
+                <div class="g2_hijo4">
+                    <img src="../elementos/team_G2.png" alt="team_g2">
+                </div>
             </section>
 
             <!-- Team Furia -->  
 
-            <section>
-
-                <h3>Team Furia</h3>
-                <img class="furia_cs2" src="../elementos/team_furia_cs2.jpg" alt="furia_cs2">
-                <h4>¿Como llego Team Furia a las semifinales?</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hbs-sn7x0v0?si=0U7J6i6_Zb_MkfiH" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            </section>
-
-    <!-- Rocket League -->
-
-            <h2>Rocket League</h2>
-
-            <!-- Team Vitality -->        
-            
-            <section>
-
-                <h3>Team Vitality</h3>
-                <img class="vitality_RL" src="../elementos/team_vitality_RL.jpg" alt="vitality_RL">
-
-            </section>
-            
-            <!-- Team Falcons -->  
-            
-            <section>
-                 
-                <h3>Team Falcons</h3>
-                <img class="falcons_RL" src="../elementos/team_falcons_RL.jpg" alt="falcons_RL">
-
-            </section>
-
-            <!-- Team G2 -->  
-             
-            <section>
-
-                <h3>Team G2</h3>
-                <img class="g2_RL" src="../elementos/team_g2_RL.jpg" alt="g2_RL">
-
-            </section>
-
-            <!-- Team Furia -->  
-
-            <section>
-
-                <h3>Team Furia</h3>
-                <img class="furia_RL" src="../elementos/team_furia_RL.jpg" alt="furia_RL">
-
+            <section class="furia_papa">
+                <div class="furia_hijo1">
+                 <h3>Team Furia</h3>
+                    <p>Originaria de Brasil y fundada en 2017, FURIA representa la pasión
+                     y el orgullo del Counter-Strike sudamericano. Con un estilo de juego 
+                     intenso y una mentalidad competitiva feroz, el equipo ha alcanzado hitos 
+                     como las semifinales del IEM Rio Major 2022 y la victoria en la ESL Pro League 
+                     Season 12 NA, consolidándose como una fuerza inquebrantable en la escena mundial.</p>
+                        <br>
+                    <p>Miembros: yuurigh, KSCERATO, FalleN, molodoy y YEKINDAR.</p>
+                </div>
+                <div class="furia_hijo4">
+                    <img src="../elementos/Team_Furia.png" alt="team_furia">
+                </div>
             </section>
 
     </main>
@@ -150,14 +148,20 @@
 
     <footer>
 
-        <p class="pfooter">Siguenos en nuestras Redes Sociales</p>
-    <!-- Logos redes sociales -->
         <section>
+            <p class="pfooter">Siguenos en nuestras Redes Sociales</p>
+
+    <!-- Logos redes sociales -->
+            <div>
             <a target="_blank" href="https://www.instagram.com"><img class="logo_instagram" src="../elementos/instagramlogo.png" alt="logo_instagram"></a>
             <a target="_blank" href="https://www.facebook.com"><img class="logo_facebook" src="../elementos/facebooklogo.png" alt="logo_facebook"></a>
             <a target="_blank" href="https://www.youtube.com"><img class="logo_youtube" src="../elementos/ytlogo.png" alt="logo_youtube"></a>
+            </div>
         </section>
     </footer>
+    <!-- BOOTSTRAP / JS -->
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>

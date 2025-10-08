@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS -->
      <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -13,62 +15,115 @@
 
     <header>
 
-    <!-- Logo y Nombre -->
-     <section class="logo_nombre">
-    <a href="../index.html"><img class="logoVR" src="../elementos/vrLOGO.png" alt="logo"></a>
-    <h1>CyberClash 2025</h1>
-    </section>
-    
-    <!-- Menu de Navegacion -->
+    <!-- BOOTSTRAP NAV -->
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Evento</a></li>
-                <li><a href="./expo.html">Expo</a></li>
-                <li><a href="./esports.html">E-Sports</a></li>
-                <li><a href="./artistas.html">Artistas</a></li>
-                <li><a href="./registro.html">Registro</a></li>
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Synthdome</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                    <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Evento</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./expo.html">Expo</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./esports.html">E-Sports</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./artistas.html">Artistas</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active boton_registro" aria-current="page" href="./registro.html">Registro</a>
+                </li>
             </ul>
-
-
+            </div>
+        </div>
         </nav>
 
+    <!-- END -->
+
+    <!-- BANNER EVENTO -->
+    <section class="banner_evento">
+    <h2>EVENTO</h2>
+    <h2 class="titulo_evento2">Explora el Corazón de Synthdome</h2>
+    </section>
     </header>
    
     <!-- Cuerpo Principal -->
 
     <main>
 
-        <section>
-        <p>CyberClash nace de la necesidad de crear un espacio donde la creatividad y la
-        innovación se encuentren. Dirigido a profesionales, estudiantes de diversas áreas y entusiastas de la tecnologia,
-        nuestro objetivo es inspirar y generar conexiones significativas en un entorno colaborativo, dinámico  divertido.</p>
+        <!-- PARTE 1 -->
 
-        <p>Contaremos con la semifinal y final de 2 disciplinas de E-Sports, una variedad de artistas internacionales, 
-        representantes de compañias reconocidas del area de la computacion y mucho mas por los proximos 3 dias.</p>
 
+        <section class="parrafo1_evento">
+            <p>Synthdome nace de la necesidad de crear un espacio donde la creatividad y la innovación se encuentren. Dirigido 
+            a profesionales, estudiantes de diversas áreas y entusiastas de la tecnología, nuestro objetivo es inspirar y
+            generar conexiones significativas en un entorno colaborativo, dinámico y divertido.</p>
+
+            <p>Contaremos con la semifinal y final de E-Sports, una variedad de artistas internacionales, representantes de 
+            compañías reconocidas del área de la computación y mucho más por los próximos 3 días.</p>
+       </section>
+
+        <section class="textos_eventos_bajo">
+                <div class="texto_evento1">
+                    <h3>EXPO TECH</h3>
+                    <h3 class="segundo_texto primer_texto">La Convergencia ha comenzado</h3>
+                </div>
+                <div class="texto_evento2">
+                    <h3>E-SPORTS</h3>
+                    <h3 class="segundo_texto">La adrenalina de la semifinal y final con los equipos más competitivos del mundo.</h3>
+                </div>
+                <div class="texto_evento3">
+                    <h3>ARTISTAS</h3>
+                    <h3 class="segundo_texto tercer_texto">Un viaje sonoro con exponentes vanguardistas. Conoce a los maestros del synthwave y retrowave.</h3>
+                </div>
         </section>
 
-        <h2>Equipos Participantes</h2>
-        
-        <h3>Team Vitality</h3>
-        <img class="logo_vitality" src="../elementos/vitalitylogo.png" alt="logo_vitality">
+        <!-- PARTE 2 -->
 
-        <h3>Team Falcons</h3>
-        <img class="logo_falcons" src="../elementos/falconslogo.png" alt="logo_falcons">
+        <section class="titulo_equipos">
+        <h3>Equipos en Competencia</h3>
+        </section>
 
-        <h3>Team G2</h3>
-        <img class="logo_g2" src="../elementos/g2logo.png" alt="logo_g2">
+        <section class="caja_logos">
+            <img class="logo_furia" src="../elementos/furialogo.png" alt="furialogo">
+            <img class="logo_g2" src="../elementos/g2logo.png" alt="g2logo">
+            <img class="logo_falcons" src="../elementos/falconslogo.png" alt="falconslogo">
+            <img class="logo_vitality" src="../elementos/vitalitylogo.png" alt="vitalogo">
+        </section>
 
-        <h3>Team Furia</h3>
-        <img class="logo_furia" src="../elementos/furialogo.png" alt="logo_furia">
+        <!-- PARTE 3 -->
 
-        <!-- Direccion del Lugar -->
-        <p>Evento se realiza en todo el corazon de Santiago, en el Movistar Arena.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.4907192728165!2d-70.661695!3d-33.46257260000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c51b935c0c23%3A0xfe177137c9c9c6c8!2sMovistar%20Arena!5e0!3m2!1ses!2scl!4v1757372894785!5m2!1ses!2scl" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="titulo_equipos">
+            <h3>Voces del Futuro: Nuestros Expertos</h3>
+        </section>
 
+        <section class="caja_marcas">
+            <img class="amd_logo" src="../elementos/amd_logo_blanco.png" alt="amd_logo">
+            <img class="aorus_logo" src="../elementos/aorus_logo_blanco.png" alt="aorus_logo">
+            <img class="msi_logo" src="../elementos/msi_logo_blanco.png" alt="msi_logo">
+        </section>
+
+        <!-- PARTE 4 -->  
+
+        <section class="titulo_equipos">
+            <h3>Ubicación del Evento</h3>
+        </section>
+
+        <section class="movistar_map">
+        <img class="movistar_arena" src="../elementos/movistar_arena.jpg" alt="movistar_arena">
+        <iframe class="movistar_mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.4907192728165!2d-70.661695!3d-33.46257260000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c51b935c0c23%3A0xfe177137c9c9c6c8!2sMovistar%20Arena!5e0!3m2!1ses!2scl!4v1757372894785!5m2!1ses!2scl" 
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
     </main>
 
@@ -76,14 +131,20 @@
 
     <footer>
         
-        <p class="pfooter">Siguenos en nuestras Redes Sociales</p>
-    <!-- Logos redes sociales -->
         <section>
+            <p class="pfooter">Siguenos en nuestras Redes Sociales</p>
+
+    <!-- Logos redes sociales -->
+            <div>
             <a target="_blank" href="https://www.instagram.com"><img class="logo_instagram" src="../elementos/instagramlogo.png" alt="logo_instagram"></a>
             <a target="_blank" href="https://www.facebook.com"><img class="logo_facebook" src="../elementos/facebooklogo.png" alt="logo_facebook"></a>
             <a target="_blank" href="https://www.youtube.com"><img class="logo_youtube" src="../elementos/ytlogo.png" alt="logo_youtube"></a>
+            </div>
         </section>
     </footer>
+    <!-- BOOTSTRAP / JS -->
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>

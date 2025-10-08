@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Document</title>
+    <!-- BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS -->
      <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -14,26 +16,67 @@
 
     <header>
 
-        <!-- Logo y Nombre -->
-        <section class="logo_nombre">
-            <a href="#"><img class="logoVR" src="./elementos/vrLOGO.png" alt="logo"></a>
-            <h1>CyberClash 2025</h1>
-        </section>
+    <!-- BOOTSTRAP NAV -->
 
-        <!-- Menu de Navegacion -->
-
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./pages/evento.html">Evento</a></li>
-                <li><a href="./pages/expo.html">Expo</a></li>
-                <li><a href="./pages/esports.html">E-Sports</a></li>
-                <li><a href="./pages/artistas.html">Artistas</a></li>
-                <li><a href="./pages/registro.html">Registro</a></li>
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Synthdome</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                    <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/evento.html">Evento</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/expo.html">Expo</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/esports.html">E-Sports</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/artistas.html">Artistas</a>
+                </li>
+                        <li class="nav-item">
+                <a class="nav-link active boton_registro" aria-current="page" href="./pages/registro.html">Registro</a>
+                </li>
             </ul>
-
-
+            </div>
+        </div>
         </nav>
+
+    <!-- END -->
+
+
+    <!-- BOOTSTRAP CARRUSEL -->
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="./elementos/index_arena_banner.jpg" class="d-block w-100" alt="arena_banner">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="./elementos/index_dj_place.jpg" class="d-block w-100" alt="dj_banner">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="./elementos/index_expo_banner.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <!-- END -->
 
     </header>
    
@@ -42,16 +85,48 @@
     <main>
 
         <!-- Primera Seccion -->
-        <section class="introduccion">
-            <h2>CyberClash 2025 Llegó a Santiago</h2>        
-            <p>Bienvenido al CyberClash 2025, el punto de encuentro donde innovadores,
-            líderes y apasionados se conectan para compartir ideas, aprender y crear
-            nuevas oportunidades. Únete a nosotros y forma parte de una experiencia 
-            única de networking y conocimiento.</p>
-            <img class="foto_convencion" src="./elementos/techevent.png" alt="foto_convencion">
+        <section class="introduccion_papa">
+            <div class="introduccion_hijo_0">
+                    <div class="introduccion_hijo_1">
+                    <h2>Bienvenido a Synthdome 2025</h2>
+                    </div> 
+
+                    <div class="introduccion_hijo_2">
+                    <p> La cúpula del futuro se enciende en Santiago de
+                    Chile, donde el gaming, la música electrónica y la
+                    cultura digital se funden en un solo latido. Esta es
+                    la edición que transforma la ciudad en un escenario
+                    cyberpunk lleno de neón, beats y competencias que 
+                    desafían los límites de lo real y lo virtual. Prepárate
+                    para vivir tres días épicos donde la comunidad
+                    gamer, tech y musical vibra unida en la experiencia
+                    más futurista del año.</p>
+                    </div>
+            </div>
+            <div class="introduccion_hijo_3">
+                <img class="imagen_invi" src="./elementos/index_persona_invitando.png" alt="persona_invitando">
+            </div>
         </section>
     
         <!-- Segunda Seccion -->
+
+        <section class="evento_index">
+           <a href="./pages/evento.html">Descubre el Evento</a>
+        </section>     
+        
+        <section class="textos_index_bajo">
+                <div class="texto_gaming1">
+                    <h3>GAMING</h3>
+                </div>
+                <div class="texto_gaming2">
+                    <h3>MUSICA</h3>
+                </div>
+                <div class="texto_gaming3">
+                    <h3>EXPO</h3>
+                </div>
+        </section>
+
+
 
     </main>
 
@@ -59,17 +134,24 @@
 
     <footer>
 
-
         <section>
             <p class="pfooter">Siguenos en nuestras Redes Sociales</p>
 
     <!-- Logos redes sociales -->
-        
+            <div>
             <a target="_blank" href="https://www.instagram.com"><img class="logo_instagram" src="./elementos/instagramlogo.png" alt="logo_instagram"></a>
             <a target="_blank" href="https://www.facebook.com"><img class="logo_facebook" src="./elementos/facebooklogo.png" alt="logo_facebook"></a>
             <a target="_blank" href="https://www.youtube.com"><img class="logo_youtube" src="./elementos/ytlogo.png" alt="logo_youtube"></a>
+            </div>
         </section>
     </footer>
+    <!-- BOOTSTRAP / JS -->
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+    const carousel = new bootstrap.Carousel('#myCarousel');
+    </script>
+
 </body>
 </html>
