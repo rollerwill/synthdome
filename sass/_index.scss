@@ -1,0 +1,112 @@
+
+%flex_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+//Primera Seccion
+    .introduccion_papa{
+        flex-direction: row;
+        font-size: 1.15rem;
+        text-align: justify;
+        width: 80%;
+        margin: 5% 10%;
+        padding: 0px;
+        @extend %flex_container;
+        background-color: var(--gris);
+        .introduccion_hijo_0{
+            display: flex;
+            flex-direction: column;
+            flex: 0.6;
+            padding: 3%;
+            font-weight: bold;
+            .introduccion_hijo_1{
+                margin: 2% 0%;
+                font-size: 1.7rem;
+            }
+            .introduccion_hijo_2{
+                line-height: 45px;
+                font-size: 1.2rem;
+            }
+        }
+        .introduccion_hijo_3{
+            flex: 0.4;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }   
+        }
+    }
+//Segunda Seccion
+
+    .evento_index{
+        width: 100%;
+        @extend %flex_container;
+        margin-bottom: 5%;
+        a{
+            text-align: center;
+            width: 380px;
+            font-size: 1.7rem;
+            border-radius: 30px;
+            background-color: var(--morado);
+            padding: 20px;
+
+        }
+        a:hover{
+            background-color: var(--rosa);
+        }
+    }
+    .textos_index_bajo{
+        display: flex;
+        flex-direction: row;
+        height: 618px;
+        justify-content: space-evenly;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+        h3{
+            font-size: 5rem;
+            margin-top: 7.5%;
+        }
+        .texto_gaming1{
+            color: var(--azulmarino);
+            background-image: url(../elementos/index_gamer_person.jpg);
+            flex: 1;
+            padding: 0px 0px 0px 0px;
+            margin-right: 5%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .texto_gaming1:hover{
+            animation: glitch 1.5s infinite;
+        }
+        .texto_gaming2{
+            color: var(--amarillo);
+            background-image: url(../elementos/index_dj_person.jpg);
+            flex: 1;
+            padding: 0px 0px 0px 0px;
+            margin-right: 5%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        .texto_gaming2:hover{
+            animation: glitch 1.5s infinite;
+        }
+        .texto_gaming3{
+            color: var(--blanco);
+            background-image: url(../elementos/index_expo_person.jpg);
+            flex: 1;
+            padding: 0px 0px 0px 0px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        .texto_gaming3:hover{
+            animation: glitch 1.5s infinite;
+        }
+    }
+}

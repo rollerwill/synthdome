@@ -1,0 +1,71 @@
+%flex_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    //BANNER
+    .banner_registro{
+        background-image: url(../elementos/registro_banner.png);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: var(--celeste);
+        height: 537px;
+        justify-content: center;
+        padding-left: 5%;
+        background-size: cover;
+        h2{
+            font-size: 4rem;
+        }
+        .titulo_registro2{
+            width: 50%;
+            color: var(--blanco);
+            font-size: 3rem;
+        }
+    }
+    //REGISTRO 
+    .papa_registro{
+        @extend %flex_container;
+        flex-direction: row;
+        flex: 1;
+        padding: 1%;
+        .hijo_registro1{
+            display: flex;
+            flex-direction: column;
+            flex: 0.5;
+            //FORMULARIO
+            form{
+                div{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 3%;
+                    font-size: 1.5rem;
+                    label{
+                        width: 40%;
+                    }
+                }
+                .registro_submit input{
+                    background-color: var(--amarillo);
+                    padding: 5px 40px;
+                    color: var(--azulmarino);
+                    border-radius: 10px;
+                    font-weight: bold;
+                }
+            } 
+        }
+        .hijo_registro2{
+            flex: 0.3;
+            img{
+                width: 100%;
+                object-fit: contain;
+                border-radius: 10px;
+                filter: drop-shadow(0px 5px 15px var(--morado));
+            }
+        }
+    }
+
+}

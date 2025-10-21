@@ -1,0 +1,175 @@
+body{
+    //BANNER
+    .banner_esports{
+        background-image: url(../elementos/esports_banner.png);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: var(--celeste);
+        height: 537px;
+        justify-content: center;
+        padding-left: 5%;
+        h2{
+            font-size: 4rem;
+        }
+        h2.titulo_evento2{
+            font-size: 3rem;
+        }
+    }
+    //PARTE1
+    .esports_titulo{
+        margin: 5%;
+    }
+    h2.esports_titulo2{
+        width: 25%;
+        color: var(--blanco);
+        font-size: 3rem;
+    }
+    h2.esports_titulo{
+    font-size: 2.3rem;
+    }
+    h2.esports_titulo2{
+        font-size: 2rem;
+        margin: 5%;
+    }
+    .parrafo_esports{
+        margin: 5%;
+        font-size: 1.6rem;
+    }
+    //TEAM VITALITY
+    .vitality_papa{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 5%;
+        .vitality_hijo1{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            max-width: 50%;
+            background-color: var(--gris);
+            padding: 3%;
+            text-align: justify;
+            justify-content: center;
+            p{
+                font-size: 1.1rem;
+                font-weight: bold;
+                line-height: 40px;
+            }
+            h3{
+                font-size: 2.5rem;
+                font-weight: bolder;
+                justify-content: start;
+            }
+        }
+        .vitality_hijo4{
+            flex: 1;
+            max-width: 50%;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    //TEAM FALCONS
+    .falcons_papa{
+        display: flex;
+        flex-direction: row;
+        margin: 5%;
+        .falcons_hijo1{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            background-color: var(--gris);
+            padding: 3%;
+            text-align: justify;
+            justify-content: center;
+            max-width: 50%;
+            p{
+                font-size: 1.1rem;
+                font-weight: bold;
+                line-height: 40px;
+            }
+            h3{
+                font-size: 2.5rem;
+                font-weight: bolder;
+                justify-content: start;
+            }
+        }
+        .falcons_hijo4{
+            flex: 1;
+            max-width: 50%;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    // TEAM G2
+    .g2_papa{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 5%;
+        .g2_hijo1{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            background-color: var(--gris);
+            padding: 3%;
+            text-align: justify;
+            justify-content: center;
+            max-width: 50%;
+            p{
+                font-size: 1.1rem;
+                font-weight: bold;
+                line-height: 40px;
+            }
+            h3{
+                font-size: 2.5rem;
+                font-weight: bolder;
+                justify-content: start;
+            }
+        }
+        .g2_hijo4{
+            flex: 1;
+            max-width: 50%;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    // TEAM FURIA
+    .furia_papa{
+        display: flex;
+        flex-direction: row;
+        margin: 5%;
+        .furia_hijo1{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            background-color: var(--gris);
+            padding: 3%;
+            text-align: justify;
+            justify-content: center;
+            max-width: 50%;
+            p{
+                font-size: 1.1rem;
+                font-weight: bold;
+                line-height: 40px;
+            }
+            h3{
+                font-size: 2.5rem;
+                font-weight: bolder;
+                justify-content: start;
+            }
+        }
+        .furia_hijo4{
+            flex: 1;
+            max-width: 50%;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}

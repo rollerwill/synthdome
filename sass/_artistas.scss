@@ -1,0 +1,86 @@
+
+body{
+    //BANNER
+    .banner_artistas{
+        background-image: url(../elementos/artistas_banner.png);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: var(--amarillo);
+        height: 537px;
+        justify-content: center;
+        padding-left: 5%;
+        background-size: cover;
+        h2{
+            font-size: 4rem;
+        }
+        h2.titulo_artista2{
+            width: 25%;
+            color: var(--blanco);
+            font-size: 3rem;
+        }
+    }
+    // PARTE 1
+    .artistas_introduccion{
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        h2{
+            font-size: 2.3rem;
+            padding-top: 2%;
+        }
+        .parrafo_artistas{
+            font-size: 1.5rem;
+        }
+    }
+    //PARTE 2 - CAJAS ARTISTAS
+    .caja_papa_artistas{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 3%;
+        margin: 1% 5% 5% 5%;
+        text-align: center;
+        //THE MIDNIGHT
+        .caja_themidnght{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+            .the_midnight{
+                width: 100%;
+            }
+            .the_midnight_spotify{
+                height: 500px;
+            }
+        }
+        //MCROCCKLIN AND HUTCH
+        .caja_mcrocklin_and_hutch{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+            .mcrocklin_and_hutch{
+                width: 100%;
+            }
+            .mcrocklin_and_hutch_spotify{
+                height: 500px;
+            }
+        }
+        //TONEBOX
+        .caja_tonebox{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+            .tonebox{
+                width: 100%;
+            }
+            .tonebox_spotify{
+                height: 500px;
+            }
+        }
+    }
+}

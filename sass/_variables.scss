@@ -1,0 +1,167 @@
+
+:root{
+    --morado:#711c91;
+    --celeste:#0abdc6;
+    --rosa:#EA00d9;
+    --azul:#133e7c;
+    --azulmarino:#091833;
+    --negro:#000000;
+    --amarillo:#fbff00;
+    --blanco:white;
+    --gris: #3d3d3d;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+%flex_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0px;
+    position: relative;
+    min-height: 100vh;
+    main{
+        background-color: var(--negro);
+        color: var(--blanco);
+        margin: 0;
+        padding: 20px;
+    }
+    //Footer
+    footer{
+        background-color: var(--azulmarino);
+        color: var(--blanco);
+        margin: 0;
+        padding: 20px;
+        height: 100px;
+        width: 100%;
+        @extend %flex_container;
+        section{
+            width: 100%;
+            @extend %flex_container;
+            flex-direction: column;
+            .pfooter{
+                font-size: 0.8rem;
+                color: var(--blanco);
+            }
+            div{
+                @extend %flex_container;
+                justify-content: space-evenly;
+                flex-direction: row;
+                width: 15%;
+                .logo_instagram{
+                    width: 40px;
+                }
+                .logo_facebook{
+                    height: 40px;
+                }
+                .logo_youtube{
+                    width: 40px;
+                }
+            }
+        }
+
+    }
+    //Hipervinculos colores
+    a{
+        color: var(--blanco);
+        text-decoration: none;
+    }
+    a:link{
+        color: var(--blanco);
+        text-decoration: none;
+    }
+    a:visited{
+        color: var(--blanco);
+        text-decoration: none;
+    }
+    a:hover{
+        color: var(--amarillo);
+        text-decoration: none;
+    }
+    a:active{
+        color: var(--celeste);
+        text-decoration: none;
+    }
+
+
+    // Header
+
+    .navbar{
+        width: 100%;
+        background-color: var(--celeste);
+        font-size: 1.2rem;
+
+
+        //Caracteristicas del nav
+
+        .navbar-nav.me-auto.mb-2.mb-lg-0{
+            width: 100%;
+            justify-content: end;
+        }
+        .navbar-nav.me-auto.mb-2.mb-lg-0{
+            li{
+                margin: 0 1%;
+                a{
+                    font-weight: bold;
+                    color: var(--blanco);
+                }
+                .boton_registro{
+                    background-color: var(--amarillo);
+                    padding: 5px 40px;
+                    color: var(--azulmarino);
+                    border-radius: 10px;
+                }
+            }
+        }
+        .navbar-brand{
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-left: 1%;
+        }
+    }
+}
+
+@keyframes glitch {
+  0% {
+      transform: translate(0, 0);
+      filter: contrast(1) brightness(1) saturate(1) hue-rotate(0deg);
+      opacity: 1;
+  }
+  25% {
+      transform: translate(-5px, -5px);
+      filter: contrast(1.1) brightness(1.1) saturate(1.1) hue-rotate(0deg);
+      opacity: 0.8;
+  }
+  40% {
+      transform: translate(5px, 5px);
+      filter: contrast(0) brightness(0) saturate(1) hue-rotate(0deg);
+      opacity: 0;
+  }
+  50% {
+      transform: translate(5px, 5px);
+      filter: contrast(1.2) brightness(1.2) saturate(1.2) hue-rotate(180deg);
+      opacity: 0.5;
+  }
+  75% {
+      transform: translate(-5px,-5px);
+      filter: contrast(1.1) brightness(1.1) saturate(1.1) hue-rotate(360deg);
+      opacity: 0.8;
+  }
+  85% {
+      transform: translate(5px, 5px);
+      filter: contrast(0) brightness(0) saturate(1) hue-rotate(0deg);
+      opacity: 0;
+  }
+  100% {
+      transform: translate(0, 0);
+      filter: contrast(1) brightness(1) saturate(1) hue-rotate(0deg);
+      opacity: 1;
+  }
+}
