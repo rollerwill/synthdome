@@ -1,9 +1,9 @@
-@media (max-width: 480px) {
+@media (max-width: 550px) {
 
 body{
  
 main{
-    min-height: 70vh;
+    min-height: 75vh;
 }
 
 
@@ -300,5 +300,162 @@ h2.esports_titulo2{
 
 }
 
+
+}
+
+@media (min-width: 551px) and (max-width: 1350px){
+
+//INDEX
+body{
+    .textos_index_bajo{
+    flex-direction: column;
+    height: 1980px;
+        .texto_gaming1{
+        margin-right: 0%;
+        margin-bottom: 10px;
+        }
+        .texto_gaming2{
+        margin-right: 0%;
+        margin-bottom: 10px;
+        }
+    }
+    .introduccion_papa{
+    flex-direction: column;
+    }
+//EVENTO
+    .textos_eventos_bajo{
+    flex-direction: column;
+    height: 1980px;
+    }
+    .banner_evento {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25vw;
+        h2{
+            font-size: 4vw;
+        }
+    }
+    h2.titulo_evento2{
+    width: 50vw;
+    font-size: 3vw;
+    }
+    .segundo_texto{
+        max-width: 460px;
+    }
+    .textos_eventos_bajo h3.segundo_texto{
+        padding: 5% 2%;
+    }
+    .textos_eventos_bajo h3.tercer_texto{
+        padding: 2%;
+    }
+//ESPORTS
+    .banner_esports{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25vw;
+        h2{
+            font-size: 4vw;
+        }
+        h2.titulo_evento2{
+        width: 50vw;
+        font-size: 3vw;
+        }
+    }
+
+.vitality_papa{
+    flex-direction: column-reverse;
+}
+
+.vitality_papa .vitality_hijo4{
+    max-width: 100%;
+}
+
+.vitality_papa .vitality_hijo1{
+    max-width: 100%;
+}
+
+.falcons_papa{
+    flex-direction: column-reverse;
+}
+
+.falcons_papa .falcons_hijo4{
+    max-width: 100%;
+}
+
+
+.falcons_papa .falcons_hijo1{
+    max-width: 100%;
+}
+
+.g2_papa{
+    flex-direction: column-reverse;
+}
+
+.g2_papa .g2_hijo4{
+    max-width: 100%;
+}
+
+
+.g2_papa .g2_hijo1{
+    max-width: 100%;
+}
+
+.furia_papa{
+    flex-direction: column-reverse;
+}
+
+.furia_papa .furia_hijo1{
+    max-width: 100%;
+}
+    .furia_papa .furia_hijo4{
+    max-width: 100%;
+    }
+    h2.esports_titulo2{
+    width: 70%;
+    }
+//ARTISTAS
+    .banner_artistas{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25vw;
+        h2{
+            font-size: 4vw;
+        }
+        h2.titulo_artista2{
+        width: 50vw;
+        font-size: 3vw;
+        }
+    }
+    .caja_papa_artistas {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+//REGISTRO
+    main{
+    min-height: 80vh;
+    }
+    .banner_registro{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25vw;
+        h2{
+            font-size: 4vw;
+        }
+        h2.titulo_registro2{
+        width: 50vw;
+        font-size: 3vw;
+        }
+    }
+    .papa_registro .hijo_registro2{
+    display: none;
+    }
+    .papa_registro .hijo_registro1 form div {
+        font-size: calc(1vw + 1vh);
+    }
+    .papa_registro .hijo_registro1 {
+        flex: 0.8;
+    }
+}
 
 }

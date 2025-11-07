@@ -53,14 +53,14 @@ body{
         h3.segundo_texto{
             align-items: end;
             font-size: 1.5rem;
-            padding: 5% 15%;
-            width: 90%;
+            padding: 5% 2%;
+            max-width: 460px;
         }
         h3.primer_texto{
             padding: 10%;
         }
         h3.tercer_texto{
-            padding: 2% 15%;
+            padding: 2%;
         }
         .texto_evento1{
             @extend %flex_container;
