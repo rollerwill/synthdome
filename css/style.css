@@ -707,14 +707,8 @@ body .papa_registro .hijo_registro2 img {
   body main {
     min-height: 75vh;
   }
-  body {
-    /*********** FOOTER **************/
-  }
   body footer section div {
     width: 60%;
-  }
-  body {
-    /*********** INDEX **************/
   }
   body .introduccion_papa {
     flex-direction: column;
@@ -747,9 +741,6 @@ body .papa_registro .hijo_registro2 img {
   body .textos_index_bajo h3 {
     font-size: 4rem;
     margin-top: 20%;
-  }
-  body {
-    /*********** EVENTO **************/
   }
   body .banner_evento {
     background-repeat: no-repeat;
@@ -793,9 +784,6 @@ body .papa_registro .hijo_registro2 img {
   }
   body .movistar_mapa {
     width: 50%;
-  }
-  body {
-    /*********** E-SPORTS **************/
   }
   body .banner_esports {
     background-repeat: no-repeat;
@@ -880,10 +868,6 @@ body .papa_registro .hijo_registro2 img {
     font-size: 0.8rem;
     line-height: 30px;
   }
-  body {
-    /*********** ARTISTAS **************/
-    /* ------------------- BANNER ---------------------- */
-  }
   body .banner_artistas {
     background-repeat: no-repeat;
     background-size: cover;
@@ -893,9 +877,6 @@ body .papa_registro .hijo_registro2 img {
     font-size: 1rem;
     width: 40%;
   }
-  body {
-    /* ------------------- PARTE 1 ---------------------- */
-  }
   body .parrafo_artistas {
     font-size: 1rem;
     text-align: justify;
@@ -904,16 +885,10 @@ body .papa_registro .hijo_registro2 img {
     font-size: 1.5rem;
     padding-top: 2%;
   }
-  body {
-    /* ------------------- PARTE 2 / CAJAS ARTISTAS ---------------------- */
-  }
   body .caja_papa_artistas {
     display: flex;
     flex-direction: column;
     gap: 30px;
-  }
-  body {
-    /* ------------------- REGISTRO---------------------- */
   }
   body .banner_registro {
     background-repeat: no-repeat;
